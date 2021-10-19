@@ -9,3 +9,5 @@ appid : fd78bccb-a8c2-4aeb-b518-c6fbcbcc1a88
 az deployment sub create --template-file "./deploymentTemplates/template-with-new-rg.json" --location WestUS --parameters appId="fd78bccb-a8c2-4aeb-b518-c6fbcbcc1a88" appSecret="Welcome#12345678" botId="QnaBot-v1" botSku=F0 newAppServicePlanName="bot-appService-v1.0" newWebAppName="bot-webApp-demo" groupName="qnaBot-rg-0" groupLocation="WestUS" newAppServicePlanLocation="WestUS" --name "QnaBot-demo-v1.0"
 
 az webapp deployment source config-zip --resource-group "qnaBot-rg-0" --name "bot-webApp-demo" --src "./zipFile.zip"
+
+<iframe src='https://webchat.botframework.com/embed/QnaBot-v1?s=ISBDCcOIuWU.E4qu6umOnmyUYiQhmdl2WGSNYV9JWsFvTFssnEi1GyU'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
