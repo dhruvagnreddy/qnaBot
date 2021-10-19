@@ -54,7 +54,7 @@ class QnABot extends ActivityHandler {
                 // If an answer was received from QnA Maker, send the answer back to the user.
                 if (qnaResults[0]) {
                     await context.sendActivity(qnaResults[0].answer);
-                    // this.fun(qnaResults[0].answer);
+                    this.fun(qnaResults[0].answer);
 
                 // If no answers were returned from QnA Maker, reply with help.
                 } else {
